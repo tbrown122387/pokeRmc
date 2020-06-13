@@ -1,2 +1,1 @@
-CXX17 = g++-7 -std=gnu++17 -fPIC
-CXX_STD = CXX17
+CXX_STD = CXX14
