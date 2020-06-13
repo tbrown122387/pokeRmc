@@ -203,9 +203,3 @@ CharacterVector postRiverComp(CharacterVector your_cards, IntegerVector num_sims
   
   return CharacterVector::create(s.prettyResults());
 }
-
-
-
-// /*** R
-// timesTwo(42)
-// */

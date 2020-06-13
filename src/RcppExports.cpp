@@ -5,17 +5,6 @@
 
 using namespace Rcpp;
 
-// test
-CharacterVector test(CharacterVector arg);
-RcppExport SEXP _pokeRmc_test(SEXP argSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< CharacterVector >::type arg(argSEXP);
-    rcpp_result_gen = Rcpp::wrap(test(arg));
-    return rcpp_result_gen;
-END_RCPP
-}
 // preFlopComp
 CharacterVector preFlopComp(CharacterVector your_cards, IntegerVector num_sims, IntegerVector num_folders, IntegerVector num_oppo);
 RcppExport SEXP _pokeRmc_preFlopComp(SEXP your_cardsSEXP, SEXP num_simsSEXP, SEXP num_foldersSEXP, SEXP num_oppoSEXP) {
@@ -77,7 +66,6 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_pokeRmc_test", (DL_FUNC) &_pokeRmc_test, 1},
     {"_pokeRmc_preFlopComp", (DL_FUNC) &_pokeRmc_preFlopComp, 4},
     {"_pokeRmc_preTurnComp", (DL_FUNC) &_pokeRmc_preTurnComp, 5},
     {"_pokeRmc_preRiverComp", (DL_FUNC) &_pokeRmc_preRiverComp, 5},
