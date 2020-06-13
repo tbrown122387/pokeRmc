@@ -10,7 +10,7 @@
 #' @return a character vector
 #' @export
 preFlopComp <- function(your_cards, num_sims, num_folders, num_oppo) {
-    .Call(`_pokeRmc_preFlopComp`, your_cards, num_sims, num_folders, num_oppo)
+    .Call('_pokeRmc_preFlopComp', PACKAGE = 'pokeRmc', your_cards, num_sims, num_folders, num_oppo)
 }
 
 #' Calculate pre-turn probability estimates
@@ -22,7 +22,7 @@ preFlopComp <- function(your_cards, num_sims, num_folders, num_oppo) {
 #' @param comm_cards community cards.
 #' @export
 preTurnComp <- function(your_cards, num_sims, num_folders, num_oppo, comm_cards) {
-    .Call(`_pokeRmc_preTurnComp`, your_cards, num_sims, num_folders, num_oppo, comm_cards)
+    .Call('_pokeRmc_preTurnComp', PACKAGE = 'pokeRmc', your_cards, num_sims, num_folders, num_oppo, comm_cards)
 }
 
 #' Calculate pre-river probability estimates
@@ -34,7 +34,7 @@ preTurnComp <- function(your_cards, num_sims, num_folders, num_oppo, comm_cards)
 #' @param comm_cards community cards.
 #' @export
 preRiverComp <- function(your_cards, num_sims, num_folders, num_oppo, comm_cards) {
-    .Call(`_pokeRmc_preRiverComp`, your_cards, num_sims, num_folders, num_oppo, comm_cards)
+    .Call('_pokeRmc_preRiverComp', PACKAGE = 'pokeRmc', your_cards, num_sims, num_folders, num_oppo, comm_cards)
 }
 
 #' Calculate post-river probability estimates
@@ -46,6 +46,6 @@ preRiverComp <- function(your_cards, num_sims, num_folders, num_oppo, comm_cards
 #' @param comm_cards community cards.
 #' @export
 postRiverComp <- function(your_cards, num_sims, num_folders, num_oppo, comm_cards) {
-    .Call(`_pokeRmc_postRiverComp`, your_cards, num_sims, num_folders, num_oppo, comm_cards)
+    .Call('_pokeRmc_postRiverComp', PACKAGE = 'pokeRmc', your_cards, num_sims, num_folders, num_oppo, comm_cards)
 }
 
