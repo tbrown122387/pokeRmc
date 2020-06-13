@@ -9,7 +9,8 @@ Description: Calculates different probabilities for use in playing Texas Hold'em
          poker. Probabilities are calculated (approximated) with the monte carlo
          method. 
 License: GPL (>= 2)
-Imports: Rcpp (>= 1.0.4)
+Imports: 
+    Rcpp
 LinkingTo: Rcpp
 RoxygenNote: 7.1.0
 Encoding: UTF-8
