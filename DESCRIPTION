@@ -1,0 +1,14 @@
+Package: pokeRmc
+Type: Package
+Title: Calculates Texas Hold'em Probabilities.
+Version: 1.0
+Date: 2020-06-12
+Author: Taylor R. Brown
+Maintainer: Taylor R. Brown <trb5me@virginia.edu>
+Description: Calculates different probabilities for use in playing Texas Hold'em 
+         poker. Probabilities are calculated (approximated) with the monte carlo
+         method. 
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.4)
+LinkingTo: Rcpp
+RoxygenNote: 7.1.0
