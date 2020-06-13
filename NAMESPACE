@@ -1,3 +1,7 @@
 useDynLib(pokeRmc, .registration=TRUE)
 exportPattern("^[[:alpha:]]+")
 importFrom(Rcpp, sourceCpp)
+export(postRiverComp)
+export(preFlopComp)
+export(preRiverComp)
+export(preTurnComp)
