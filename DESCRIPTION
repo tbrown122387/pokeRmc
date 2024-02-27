@@ -8,7 +8,7 @@ Maintainer: Taylor R. Brown <trb5me@virginia.edu>
 Description: Calculates different probabilities for use in playing Texas Hold'em 
          poker. Probabilities are calculated (approximated) with the monte carlo
          method. 
-License: GPL (>= 2)
+License: MIT + file LICENSE
 Imports: 
     Rcpp
 LinkingTo: Rcpp

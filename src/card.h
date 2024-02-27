@@ -3,6 +3,7 @@
 
 #include <string>
 #include <unordered_map>
+#include <array>
 
 
 /* enum for the value of a single card */
